@@ -65,13 +65,13 @@ struct ContentView: View {
                     
                 }
             }
-            HStack{
+            HStack() {
                 TextField("Name", text: $tempName)
                 TextField("Date", text: $tempDate)
                 TextField("City", text: $tempCity)
                 TextField("Country", text: $tempCountry)
             }
-            .padding(40)
+            .padding(EdgeInsets(top: 0, leading: 75, bottom: 50, trailing: 0))
             .foregroundColor(.gray)
             
             Button("Add Artist"){
